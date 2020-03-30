@@ -56,9 +56,16 @@ const Container = styled.div`
   .insta:hover .insta-info {
     opacity: 0;
   }
-  p {
-    font-size: 28px;
+  .p1 {
+    font-size: 24px;
     font-weight: 600;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .p2 {
+    font-size: 14px;
+    font-weight: 500;
     text-align: center;
     color: #fff;
   }
@@ -72,8 +79,13 @@ const Container = styled.div`
 function Instagram({ data }) {
   const captions1 = [
     "We Offer Purchase Prequalify Courses",
-    "We Offer Resources To Investors",
-    "We Join Investor Groups"
+    "We offer Investor Resources",
+    "Join A Local Investor Groups"
+  ];
+  const captions2 = [
+    "To make sure you get paid on time, every time, we offer our residents online, automatic rent payment which is deducted instantly from a checking account or credit card. For owners, contributions can be made with a checking account or credit card right from your owner portal, and rent proceeds are direct deposited to owners monthly, so no more trips to the bank. ",
+    "We utilize a strict screening policy to help ensure our residents pay rent on time, take care of their units, and promote a safe and comfortable environment for neighboring residents. Prior to approving any application, we conduct comprehensive checks on credit,background, social media, income, and employment for every resident on a lease.",
+    "From landscaping and leaky faucets to major upgrades and renovations, we have a reliable network of vendors, suppliers, and contractors that can tackle any project at competitive volume pricing. We closely screen all contractors to ensure quality standards and insurance requirements are met at all times "
   ];
   return (
     <Container>
@@ -86,7 +98,8 @@ function Instagram({ data }) {
               className="insta-img"
             />
             <div className="insta-info">
-              <p>{captions1[index]}</p>
+              <p className="p1">{captions1[index]}</p>
+              <p className="p2">{captions2[index]}</p>
             </div>
           </div>
         ))}

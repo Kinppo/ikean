@@ -114,7 +114,8 @@ const Hero = ({ setActiveLink }) => {
       <div className="hero-content">
         <h1>WE Build The trust </h1>
         <p>
-          We are ultimately accountable for all aspects of a project’s success.
+          Ikean properties offer a la carte property management options at
+          affordable prices contact us today for a quote.
         </p>
         <button
           className="hero-btn"

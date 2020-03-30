@@ -81,6 +81,14 @@ const Container = styled.div`
       transform: translateY(5px);
     }
   }
+  @media only screen and (max-width: 500px) {
+    .phone-number {
+      display: none;
+    }
+    .header-wrapper {
+      justify-content: center !important;
+    }
+  }
 `;
 const Header = ({ activeLink, setActiveLink }) => {
   useEffect(() => {
